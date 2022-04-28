@@ -8,22 +8,19 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<bean name="emp"
-		class="com.springdemos.springcore.dibasic.Employee">
-		
-		<property name="id">   
-		   <value>11</value>
-		</property>
-		
-		<property name="name" value="Srk"/>  
 
+	<bean name="hosp" class="com.springdemos.springcore.list.Hospital">
+		<property name="name" value="GGITM Hospital">
+		</property>
+
+		<property name="department">
+			<list>
+				<value>Ortho</value>
+				<value>Orth</value>
+				<value>Ort</value>
+				<value>Or</value>
+			</list>
+		</property>
 	</bean>
-	
-	<bean name="emp1"
-		class="com.springdemos.springcore.dibasic.Employee"
-		p:id="12"
-		p:name="Shahrukh"/>
 
 </beans>
-
-
